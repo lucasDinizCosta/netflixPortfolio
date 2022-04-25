@@ -1,0 +1,28 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 10px;
+    /* border: 1px solid #FFF; */
+}
+
+.nav-item {
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--unselected-color);
+    padding: 10px;
+    margin: 10px;
+
+    /* border: 1px solid #FFF; */
+}
+
+.nav-item:hover {
+    color: var(--selected-color);
+    /* color: red; */
+}
+
+.nav-item:first-child {
+    margin-left: 60px;
+}

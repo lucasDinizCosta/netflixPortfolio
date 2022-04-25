@@ -1,0 +1,28 @@
+:root {
+    --bg-dark: #141414; 
+    --logo-height: 50px;
+    --unselected-color: #e5e5e5;
+    --selected-color: #FFF;
+}
+
+.app {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* border: 1px solid #FFF; */
+}
+
+* {
+    box-sizing: border-box;
+    background-color: var(--bg-dark);
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(../fonts/NetflixSans_W_Th.woff2) format('woff2'), url(../fonts/NetflixSans_W_Th.woff) format('woff');
+}
