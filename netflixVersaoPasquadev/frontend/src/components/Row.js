@@ -1,31 +1,49 @@
-import React, { useEffect } from 'react'
-import { getMovies } from '../api';
+import React, { useEffect } from "react";
+import { getMovies } from "../api";
 
-function Row({title, path}) {
+import './Row.css';
+
+const imageHost = "https://image.tmdb.org/t/p/original/";
+function Row({ title, path, isLarge }) {
   // Define um estado/hook para movies
   const [movies, setMovies] = React.useState([]);
   const fetchMovies = async (_path) => {
     try {
       const data = await getMovies(_path);
-      console.log("data: ", data);
+      // console.log("data: ", data);
       setMovies(data?.results);
     } catch (error) {
       console.log("fetchMovies error: ", error);
     }
-  }
+  };
   // Hook executada toda vez que a pagina renderizar
   useEffect(() => {
     // faz alguma coisa
     fetchMovies(path);
     // return () => {
-    //   // faz alguma coisa quando for destruido
+    // faz alguma coisa quando for destruido
     // }
-  }, [path]) // dependencias
-  
+  }, [path]); // dependencias
 
   return (
-    <div>Row</div>
-  )
+    <div className="row-container">
+      <h2 className="row-header">{title}</h2>
+      <div className="row-cards">
+        { movies?.map((movie) => {
+          return (
+            <img
+              className={`movie-card ${isLarge && "movie-card-large"}`}
+              key={movie.id}
+              src={`${imageHost}${
+                isLarge ? movie.backdrop_path : movie.poster_path
+              }`}
+              alt={movie.name}
+            ></img>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
-export default Row
+export default Row;
