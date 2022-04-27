@@ -4,7 +4,8 @@
     /* justify-content: space-around; */
     align-items: center;
     padding: 10px;
-    /* border: 1px solid #FFF; */
+    border: 1px solid #FFF;
+    width: 99.9%;
 }
 
 .nav-item {
@@ -14,15 +15,31 @@
     color: var(--unselected-color);
     padding: 10px;
     margin: 10px;
-
-    /* border: 1px solid #FFF; */
+    border: 1px solid #FFF;
 }
 
 .nav-item:hover {
     color: var(--selected-color);
-    /* color: red; */
 }
 
 .nav-item:first-child {
     margin-left: 60px;
+}
+
+@media(max-width: 480px){
+    .nav-item {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 545px){
+    .nav-item:first-child {
+        margin-left: 0px;
+    }
+}
+
+@media(min-width: 550px){
+    .nav-item:first-child {
+        margin-left: 60px;
+    }
 }
