@@ -60,12 +60,12 @@ const categories = [
 
 export const getMovies = async (path) => {
     try {
-        let url = `https://api.themoviedb.org/3/${path}`;
+        let url = `https://api.themoviedb.org/3${path}`;
         const response = await fetch(url);
         const data = await response.json();
         return data;
     } catch (error) {
-        console.log("error getMovies", error);
+        console.log("getMovies error: ", error);
     }
 }
 
