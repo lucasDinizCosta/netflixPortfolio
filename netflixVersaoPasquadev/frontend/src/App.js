@@ -1,5 +1,6 @@
 import './App.css';
 
+import Banner from './components/Banner';
 import Row from './components/Row';
 import categories from './api';
 
@@ -7,8 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* Navbar */}
-      {/* destaque */}
-      {/* Em alta */}
+      <Banner />
       {categories.map((category) => {
         return (
           <Row 
