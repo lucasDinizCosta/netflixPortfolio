@@ -1,5 +1,6 @@
 import './App.css';
 
+import Nav from './components/Nav';
 import Banner from './components/Banner';
 import Row from './components/Row';
 import categories from './api';
@@ -7,7 +8,7 @@ import categories from './api';
 function App() {
   return (
     <div className="App">
-      {/* Navbar */}
+      <Nav />
       <Banner />
       {categories.map((category) => {
         return (

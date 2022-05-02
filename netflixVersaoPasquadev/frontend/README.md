@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Referência
+* Este projeto segue como referência o vídeo **"Netflix clone com REACT JS para iniciantes (em 2 horas!)"**
+  * https://www.youtube.com/watch?v=-9ulftO_zZU
+  * https://github.com/viniciuspasquantonio/netflix-clone-react
+
 ## Códigos dos gêneros na API:
 <hr>
 
@@ -36,17 +41,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ==> Referencia: https://www.themoviedb.org/talk/5daf6eb0ae36680011d7e6ee?language=pt-BR
 
 <hr>
-
-
-
-
-
-
-
-
-
-
-
 
 ## Available Scripts
 
