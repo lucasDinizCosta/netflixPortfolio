@@ -3,7 +3,7 @@ const API_KEY = "7e5c4f7309195e7aaf3da335a966d6b1";
 const categories = [
     {
         name: "trending",
-        title: "Em alta",
+        title: "Em Alta",
         path: `/trending/all/week?api_key=${API_KEY}&language=pt-BR`,
         isLarge: true,
     },
